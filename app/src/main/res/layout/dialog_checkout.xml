@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請填寫面交資訊"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#333333"/>
+
+    <EditText
+        android:id="@+id/et_buyer_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="您的姓名或學號"
+        android:background="#EEEEEE"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:singleLine="true"/>
+
+    <Spinner
+        android:id="@+id/spinner_meeting_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EEEEEE"
+        android:layout_marginBottom="12dp" />
+    <TextView
+        android:id="@+id/tv_meeting_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:hint="點擊選擇面交日期與時間"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="聯絡方式 (IG, Line 或手機)"
+        android:background="#EEEEEE"
+        android:padding="12dp"
+        android:singleLine="true"/>
+
+</LinearLayout>
